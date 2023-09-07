@@ -1,0 +1,122 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    border: none;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    
+}
+.container{
+    position: absolute;
+    top: 10%;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 3%;
+}
+.header{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+}
+.logo{
+    position: absolute;
+    font-family: 'Montez', cursive;
+    color: rgb(86, 86, 190);
+    top: 5px;
+    left:5px;
+    font-size: 48px;
+}
+.nav{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.subhead{
+    position: absolute;
+    color: rgb(86, 86, 190);
+    font-family: 'Ubuntu Mono', monospace;
+    top: 60px;
+    left: 5px;
+}
+.signupbtn,.signinbtn{
+    background-color: blue;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    border: 1px solid rgb(30, 30, 180);;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.signupbtn:hover,.signinbtn:hover{
+    background-color: rgb(65, 65, 158)
+}
+.title{
+    text-align: center;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin: 1% 0%;
+    font-weight: 700;
+}
+.name{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.edit,.like,.com{
+    color: white;
+    background-color: #EE4654;
+    padding: 0.6% 2%;
+    cursor: pointer;
+    box-shadow:  #EE4654 0px 7px 15px 0px;
+}
+.content{
+    padding: 1% 0%;
+    font-size: 60%;
+    margin: 1% 0%;
+    font-family: 'Share Tech Mono', monospace;
+}
+button:hover{
+    font-size: 105%;
+}
+.likesnum{
+    color: grey;
+    margin: 1% 0%;
+    
+}
+textarea{
+    border: 1px solid #F0F0F0;
+    color: #CBCDCB;
+    resize: none;
+    height: 70px;
+    margin: 2% 0%;
+    padding: 1%;
+}
+textarea:hover{
+    color: black;
+}
+.com-box{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    
+}
+.com{
+    margin-bottom: 4%;
+}
+.comments{
+    background-color: #E2E4E6;
+    padding: 1% 1%;
+    margin: 1% 0%;
+}
+.first{
+    background-color: white;
+    padding: 1%;
+    margin: 1% 0%;
+}
