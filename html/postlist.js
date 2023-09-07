@@ -56,7 +56,7 @@ function fun5(e){
     child = trash5.parentElement.parentElement.parentElement.parentElement;
 }
 var page = ()=>{
-    window.location.href="../post.html";
+    window.location.href="../post/post.html";
 }
 trash1.addEventListener('click',fun1);
 trash2.addEventListener('click',fun2);
