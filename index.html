@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Home Page</title>
+</head>
+<body>
+    <img src="./images/background.jpg">
+    <div class="header">
+        <span class="logo">Scribbler</span>
+        <span class="nav">
+            <button class="signupbtn" onclick="signuppage()">Sign Up</button>
+            <button class="signinbtn" onclick="signinpage()">Sign In</button>
+        </span>
+        <span class="subhead">Explore, Imagine, Create</span>
+    </div>
+    <div class="container">
+        <div id="postid" class="postclass">
+            <button id="allpostid" class="allpostbtn" onclick="window.location.href='html/postslist.html'" >All Posts</button>
+            <button id="createpostid" class="createpostbtn" onclick="createpostpage()">Create Post</button>
+        </div>
+        <div id="signupid" class="uppage">
+            <form id="upformid"  >
+                Get started
+                <span class="material-symbols-outlined" id="icon" >
+                    close
+                    </span>
+                <hr size="5%" color="black">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name" required>
+                <label>Username</label>
+                <input type="text" placeholder="Enter your Username" required>
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password" required>
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Re-enter your password" required>
+                <button type="submit" class="signuppagebtn"> Sign Up</button>
+            </form>
+        </div>
+        <div id="signinid" class="inpage">
+            <form id="upformid"  >
+                Welcome Back!
+                <span class="material-symbols-outlined" id="iconin">
+                    close
+                    </span>
+                <hr size="5%" color="black">
+                <label>Username</label>
+                <input type="text" placeholder="Enter your Username" required>
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password" required>
+                <button type="submit" class="signinpagebtn"> Sign In</button>
+                <div style="text-align: center; margin-top: 1%;">Not a member?<span id="backtosignup"> Sign Up</span></div>
+            </form>
+        </div>
+        <div id="createid" class="createpage">
+            Pen your post 
+            <span class="material-symbols-outlined" id="iconpost">
+                close
+                </span>
+            <hr size="5%" color="black">    
+            <label>Title</label>   
+            <input type="text" placeholder="Enter title of your post">
+            <label>Content</label>
+            <textarea placeholder="Enter the content of your post" class="description" ></textarea>
+            <button type="button" class="createbutton"> Create</button>
+        </div>
+        <div id = "over" >
+
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
